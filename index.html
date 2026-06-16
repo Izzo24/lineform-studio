@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>線構 LINEFORM — 沉浸式線條設計工作室</title>
+<meta name="description" content="線構 LINEFORM 是一間結合空間思維與數位互動的設計工作室。我們以「一筆畫」為哲學，用 WebGL / Three.js 打造沉浸式品牌體驗、生成藝術與互動官網。">
+<meta name="keywords" content="互動設計,Three.js,WebGL,沉浸式網站,生成藝術,品牌設計,線條藝術,創意工作室">
+<meta property="og:title" content="線構 LINEFORM — 沉浸式線條設計工作室">
+<meta property="og:description" content="以一筆畫為哲學，打造沉浸式互動體驗。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://izzo24.github.io/lineform-studio/">
+<meta property="og:image" content="https://izzo24.github.io/lineform-studio/images/work-forms.webp">
+<link rel="canonical" href="https://izzo24.github.io/lineform-studio/">
+<link rel="icon" type="image/svg+xml" href="./logos/lineform-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@400;500;700&family=Space+Mono:wght@400;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- intro overlay -->
+<div id="intro"><div class="n"><b>線 構 ・ L I N E F O R M</b></div></div>
+
+<!-- Three.js immersive canvas -->
+<canvas id="scene"></canvas>
+
+<!-- custom cursor -->
+<div class="cursor-ring"></div><div class="cursor-dot"></div>
+
+<div class="wrap">
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container nav-in">
+    <a href="#top" class="nav-logo" data-hov><img src="./logos/lineform-logo.svg" alt="線構 LINEFORM"></a>
+    <div class="nav-links">
+      <a href="#manifesto" data-hov>理念</a>
+      <a href="#capabilities" data-hov>能力</a>
+      <a href="#works" data-hov>作品</a>
+      <a href="#process" data-hov>流程</a>
+      <a href="#contact" class="nav-cta" data-hov>合作</a>
+    </div>
+    <button class="nav-burger" id="burger" aria-label="選單"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero container" id="top">
+  <div class="hero-tag eyebrow">WebGL · 互動設計 · 生成藝術 工作室</div>
+  <h1>
+    <span class="hero-line">一筆，</span>
+    <span class="hero-line">構成<span class="stamp">線</span>之</span>
+    <span class="hero-line">所有<span class="stamp">形</span>。</span>
+  </h1>
+  <p class="hero-sub">線構 LINEFORM 把空間的線條思維帶進瀏覽器。我們用 Three.js 與生成演算法，讓品牌在滑鼠與捲動之間，被一條線重新畫出來。</p>
+  <div class="hero-meta">
+    <div class="m"><span class="mono">EST.</span><strong>2021</strong></div>
+    <div class="m"><span class="mono">PROJECTS</span><strong>60+</strong></div>
+    <div class="m"><span class="mono">STACK</span><strong>Three.js / WebGL</strong></div>
+    <div class="m"><span class="mono">BASED IN</span><strong>Taipei</strong></div>
+  </div>
+  <div class="scroll-hint"><span>SCROLL</span><span class="bar"></span></div>
+</header>
+
+<!-- MANIFESTO -->
+<section id="manifesto">
+  <div class="container split manifesto">
+    <div class="reveal">
+      <div class="eyebrow">理念 / MANIFESTO</div>
+      <h2>我們相信，<br>複雜的東西，<br>能用一條線說清楚。</h2>
+      <p>線是最古老的設計工具，也是最誠實的。它沒有填色可以遮掩，每一個轉折都是決定。線構把這份誠實帶進數位介面——少即是多，動即是敘事。</p>
+      <p>從一筆畫的品牌符號，到由演算法即時生成的沉浸場景，我們讓「線」成為品牌與人之間，最直接的對話。</p>
+      <div class="sign">— 把想法，畫成體驗。</div>
+    </div>
+    <div class="illus reveal">
+      <span class="tape"></span>
+      <img src="./images/face.webp" alt="一筆畫人像線條插畫，臉部側面化為流動的線條">
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section id="capabilities">
+  <div class="container">
+    <div class="eyebrow reveal" style="margin-bottom:24px">能力 / CAPABILITIES</div>
+    <div class="caps reveal">
+      <div class="cap">
+        <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="#1A1A18" stroke-width="2" stroke-linecap="round"><circle cx="24" cy="24" r="16"/><path d="M8 24h32M24 8c5 6 5 26 0 32M24 8c-5 6-5 26 0 32"/></svg></div>
+        <span class="no">01</span><h3>沉浸式官網</h3>
+        <p>以 Three.js / WebGL 打造捲動敘事與互動場景，讓品牌官網本身成為一件作品。</p>
+      </div>
+      <div class="cap">
+        <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="#1A1A18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 38c6-22 22-22 28 0M16 22c4-10 12-10 16 0"/><circle cx="24" cy="12" r="3" fill="#D6442E" stroke="none"/></svg></div>
+        <span class="no">02</span><h3>生成藝術</h3>
+        <p>用程式碼即時繪圖，為展覽、活動與品牌打造獨一無二、永不重複的視覺。</p>
+      </div>
+      <div class="cap">
+        <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="#1A1A18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 40 L20 12 L28 30 L40 8"/><circle cx="20" cy="12" r="2.6" fill="#D6442E" stroke="none"/></svg></div>
+        <span class="no">03</span><h3>一筆畫識別</h3>
+        <p>從單線符號出發的品牌識別系統，可動可靜，在各種媒介上維持一致的手感。</p>
+      </div>
+      <div class="cap">
+        <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="#1A1A18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="13" width="30" height="22" rx="3"/><path d="M9 35 24 23 39 35"/></svg></div>
+        <span class="no">04</span><h3>互動裝置</h3>
+        <p>結合感測與即時影像，為實體空間設計可被觸碰、會回應的數位互動。</p>
+      </div>
+      <div class="cap">
+        <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="#1A1A18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 10v28M34 10v28M14 18h20M14 30h20"/></svg></div>
+        <span class="no">05</span><h3>動態排版</h3>
+        <p>會呼吸的文字與版面，讓內容在閱讀過程中產生節奏與情緒。</p>
+      </div>
+      <div class="cap">
+        <div class="ic"><svg viewBox="0 0 48 48" fill="none" stroke="#1A1A18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="6"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6M11 11l4 4M33 33l4 4M37 11l-4 4M15 33l-4 4"/></svg></div>
+        <span class="no">06</span><h3>技術顧問</h3>
+        <p>從效能到可維護性，協助團隊把實驗性的互動，穩定地落地到正式產品。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee reveal"><div class="track">
+  <span>WebGL</span><span class="dot">/</span><span>一筆畫</span><span class="dot">/</span><span>Generative</span><span class="dot">/</span><span>沉浸式敘事</span><span class="dot">/</span><span>Three.js</span><span class="dot">/</span><span>線條藝術</span><span class="dot">/</span>
+  <span>WebGL</span><span class="dot">/</span><span>一筆畫</span><span class="dot">/</span><span>Generative</span><span class="dot">/</span><span>沉浸式敘事</span><span class="dot">/</span><span>Three.js</span><span class="dot">/</span><span>線條藝術</span><span class="dot">/</span>
+</div></div>
+
+<!-- WORKS -->
+<section id="works">
+  <div class="container">
+    <div class="works-head">
+      <div class="reveal"><div class="eyebrow" style="margin-bottom:16px">精選作品 / SELECTED</div><h2>線，畫過的地方</h2></div>
+      <div class="mono reveal" style="font-size:.78rem;color:var(--ink-faint)">2021—2026 · 12 selected</div>
+    </div>
+    <div class="work-grid">
+      <article class="work reveal" data-hov>
+        <div class="ph"><img src="./images/work-forms.webp" alt="沉浸式互動策展的生成線條視覺"></div>
+        <div class="cap-row"><div><h3>無題・沉浸策展</h3><div class="tags">WEBGL / 即時生成 / 展場</div></div><div class="arrow">↗</div></div>
+      </article>
+      <article class="work reveal" data-hov>
+        <div class="ph"><img src="./images/work-arch.webp" alt="建築事務所形象網站的線稿插畫"></div>
+        <div class="cap-row"><div><h3>原型建築事務所</h3><div class="tags">形象官網 / 動態排版</div></div><div class="arrow">↗</div></div>
+      </article>
+      <article class="work reveal" data-hov>
+        <div class="ph"><img src="./images/hands.webp" alt="一筆畫品牌識別的雙手線條插畫"></div>
+        <div class="cap-row"><div><h3>手作職人・一筆識別</h3><div class="tags">品牌識別 / 動態 Logo</div></div><div class="arrow">↗</div></div>
+      </article>
+      <article class="work reveal" data-hov>
+        <div class="ph"><img src="./images/face.webp" alt="生成肖像藝術的人像線條實驗"></div>
+        <div class="cap-row"><div><h3>千面・生成肖像</h3><div class="tags">生成藝術 / 互動裝置</div></div><div class="arrow">↗</div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div class="eyebrow reveal" style="margin-bottom:40px">合作流程 / PROCESS</div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">壹</div><h3>對焦</h3><p>從品牌核心出發，找出最值得被「一條線」放大的那個概念。</p></div>
+      <div class="step reveal"><div class="n">貳</div><h3>草圖</h3><p>大量手繪與程式草稿並行，快速試出互動的手感與節奏。</p></div>
+      <div class="step reveal"><div class="n">參</div><h3>構築</h3><p>以 Three.js 與前端工程實作，兼顧視覺張力與真實效能。</p></div>
+      <div class="step reveal"><div class="n">肆</div><h3>交付</h3><p>上線、優化、教學文件，讓團隊也能輕鬆維護這件作品。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact reveal">
+      <div class="c-grid">
+        <div>
+          <h2>把你的想法，<br><em>畫成一條線。</em></h2>
+          <p>無論是一場展覽、一個品牌，或一個還很模糊的點子——告訴我們，讓線構替它找到形狀。</p>
+          <form data-mock>
+            <div class="field"><label>你的名字 / NAME</label><input type="text" required></div>
+            <div class="field"><label>聯絡方式 / EMAIL</label><input type="email" required></div>
+            <div class="field"><label>想聊聊什麼 / BRIEF</label><textarea></textarea></div>
+            <button type="submit" class="btn-ink" data-hov>送出這條線 →</button>
+          </form>
+        </div>
+        <div class="c-info">
+          <div class="row"><div class="k">EMAIL</div><div class="v">hello@lineform.studio</div></div>
+          <div class="row"><div class="k">STUDIO</div><div class="v">台北市・大安區</div></div>
+          <div class="row"><div class="k">SOCIAL</div><div class="v">Instagram · Behance</div></div>
+          <div class="row"><div class="k">HOURS</div><div class="v">週一至週五 / 10:00–19:00</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="container foot-in">
+    <span>© 2026 線構 LINEFORM STUDIO</span>
+    <span>DRAWN WITH ONE LINE · TAIPEI</span>
+  </div>
+</footer>
+
+</div><!-- /wrap -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

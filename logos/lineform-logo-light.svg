@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" role="img" aria-label="線構 LINEFORM">
+  <g fill="none" stroke="#F4F1EA" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 64 C 8 44 26 20 46 28 C 64 35 50 60 34 56 C 18 52 30 26 52 30 C 74 34 70 64 48 66"/>
+    <circle cx="60" cy="30" r="3.2" fill="#D6442E" stroke="none"/>
+  </g>
+  <text x="92" y="46" font-family="'Noto Serif TC', Georgia, serif" font-size="34" font-weight="700" fill="#F4F1EA" letter-spacing="2">線構</text>
+  <text x="93" y="70" font-family="'Space Mono', monospace" font-size="12" font-weight="700" fill="#B8B4AA" letter-spacing="6">LINEFORM</text>
+</svg>

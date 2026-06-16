@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://izzo24.github.io/lineform-studio/sitemap.xml
