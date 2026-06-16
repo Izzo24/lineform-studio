@@ -47,7 +47,7 @@
   var canvas=document.getElementById('scene');
   if(!canvas || typeof THREE==='undefined') return;
   var renderer;
-  try{ renderer=new THREE.WebGLRenderer({canvas:canvas, alpha:true, antialias:true}); }
+  try{ renderer=new THREE.WebGLRenderer({canvas:canvas, alpha:true, antialias:true, preserveDrawingBuffer:true}); }
   catch(err){ canvas.style.display='none'; return; }
   renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
   renderer.setSize(innerWidth, innerHeight);
